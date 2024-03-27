@@ -1,0 +1,53 @@
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    height: 100%;
+    border: 5px solid black;
+}
+
+.employees {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.employee-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0.5rem;
+    background-color: lightgray;
+}
+
+.employee-name {
+    min-width: 100px;
+    font-weight: 700;
+}
+
+.employee-age {
+    min-width: 30px;
+    font-weight: 600;
+}
+
+.add {
+    padding: 0.3rem 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .left {
+        height: 50vh;
+    }
+}
+
